@@ -10,7 +10,7 @@
 
   modules:
     blazemeter:
-      token: 138efa2c89f04e05e555e6b1830c73f6e19128f372b8134b3132e13c6e1c082a7dc91b73
+      token: 16d16ddc4d4fc12738562fb3:88fe44bb074a3181ca8c21ed0704b9fb4d1a09b26c73dbe8c25412c400872057f3b310cf
 
   reporting:
     - module: console
@@ -24,3 +24,6 @@
       report-name: Taurus test report
       test: Taurus test
       project: Taurus test project
+
+  settings:
+    artifacts-dir: TaurusResult
