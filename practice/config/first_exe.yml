@@ -10,4 +10,4 @@
 
   reporting:
     module: final-stats
-    duml-xml: stats.xml
+    dump-xml: stats.xml
