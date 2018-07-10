@@ -1,0 +1,13 @@
+---
+  execution:
+    iterations: 50
+    concurrency: 5
+    scenario: with_script
+
+  scenarios:
+    with_script:
+      script: ../script/TestC2.jmx
+
+  reporting:
+    module: final-stats
+    duml-xml: stats.xml
