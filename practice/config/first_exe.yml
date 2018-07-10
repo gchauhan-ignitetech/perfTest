@@ -13,14 +13,14 @@
       token: 138efa2c89f04e05e555e6b1830c73f6e19128f372b8134b3132e13c6e1c082a7dc91b73
 
   reporting:
-    module: console
-    module: final-stats
-    summary: true  # overall samples count and percent of failures
-    percentiles: true  # display average times and percentiles
-    failed-labels: false  # provides list of sample labels with failures
-    test-duration: true  # provides test duration
-    dump-csv: perf_result_csv.csv
-    module: blazemeter
-    report-name: Taurus test report
-    test: Taurus test
-    project: Taurus test project
+    - module: console
+    - module: final-stats
+      summary: true  # overall samples count and percent of failures
+      percentiles: true  # display average times and percentiles
+      failed-labels: false  # provides list of sample labels with failures
+      test-duration: true  # provides test duration
+      dump-csv: perf_result_csv.csv
+    - module: blazemeter
+      report-name: Taurus test report
+      test: Taurus test
+      project: Taurus test project
