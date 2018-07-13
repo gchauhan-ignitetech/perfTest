@@ -8,6 +8,11 @@
       iterations: 1
       scenario: 
         script: ../script/OneLoginMultipleAction.jmx
+    - concurrency: 3
+      iterations: 1
+      LOOP_COUNT: 5
+      scenario: 
+        script: ../script/OneLoginMultipleAction1.jmx
 
   modules:
     blazemeter:
