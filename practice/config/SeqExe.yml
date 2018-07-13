@@ -12,6 +12,8 @@
   modules:
     blazemeter:
       token: 16d16ddc4d4fc12738562fb3:88fe44bb074a3181ca8c21ed0704b9fb4d1a09b26c73dbe8c25412c400872057f3b310cf
+    local:
+      sequential: true
 
   reporting:
     - module: console
@@ -28,3 +30,5 @@
 
   settings:
     artifacts-dir: TaurusResult
+
+  
