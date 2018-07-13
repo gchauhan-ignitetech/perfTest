@@ -4,6 +4,7 @@
       concurrency: 5
       scenario: with_script
     - iterations: 1
+      concurrency: 2
       scenario: seq_exe
 
   scenarios:
