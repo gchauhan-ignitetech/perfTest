@@ -1,12 +1,16 @@
 ---
   execution:
-    iterations: 50
-    concurrency: 5
-    scenario: with_script
+    - iterations: 50
+      concurrency: 5
+      scenario: with_script
+    - iterations: 1
+      scenario: seq_exe
 
   scenarios:
     with_script:
       script: ../script/TestC2.jmx
+    seq_exe:
+      script: ../script/OneLoginMultipleAction.jmx
 
   modules:
     blazemeter:
