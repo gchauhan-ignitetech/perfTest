@@ -1,0 +1,25 @@
+---
+  execution:
+    - concurrency: 5
+      iterations: 50
+      scenario: 
+        script: ../script/TestC2.jmx
+    - concurrency: 2
+      iterations: 1
+      scenario: 
+        script: ../script/OneLoginMultipleAction.jmx
+
+  modules:
+    blazemeter:
+      token: 16d16ddc4d4fc12738562fb3:88fe44bb074a3181ca8c21ed0704b9fb4d1a09b26c73dbe8c25412c400872057f3b310cf
+    local:
+      sequential: true
+
+  reporting:
+    - module: final-stats
+      dump-csv: TaurusResult/stats.xml
+
+  settings:
+    artifacts-dir: TaurusResult
+
+  
